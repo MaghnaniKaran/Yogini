@@ -1,8 +1,10 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -56,7 +58,7 @@ const About = () => {
           <div>
             <button
               className="text-black font-semibold rounded-md text-md border-2 border-black p-2 mt-4 "
-              onClick=""
+              onClick={() => navigate("/contact")}
             >
               More About Liz
             </button>

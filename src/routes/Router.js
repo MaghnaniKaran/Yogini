@@ -6,6 +6,7 @@ import Home from "../views/Home.js";
 import About from "../views/About.js";
 import Contact from "../views/Contact.js";
 import Login from "../views/Login.js";
+import Registration from "../views/Registration.js";
 
 const routes = (
   <Routes>
@@ -14,6 +15,7 @@ const routes = (
     <Route path="/about" element={<About />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/registration" element={<Registration />} />
   </Routes>
 );
 

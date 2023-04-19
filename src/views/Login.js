@@ -38,7 +38,7 @@ const Login = () => {
           <div className="flex justify-center">
             <button
               className="text-white rounded-md h-8 w-40 my-6 bg-red-500 text-sm"
-              onClick=""
+              onClick={() => navigate("/home")}
             >
               Login
             </button>
@@ -46,7 +46,7 @@ const Login = () => {
           <p className="font-semibold text-black mt-10 text-center">
             If you have not Signed-up,{" "}
             <span
-              onClick={() => navigate("/home")}
+              onClick={() => navigate("/registration")}
               className=" text-blue-700 cursor-pointer"
             >
               Click here.

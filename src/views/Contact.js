@@ -1,8 +1,10 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -60,7 +62,7 @@ const Contact = () => {
           <div>
             <button
               className="text-white rounded-md text-md  p-2 mt-7 w-32 bg-red-500"
-              onClick=""
+              onClick={() => navigate("/home")}
             >
               Submit
             </button>
